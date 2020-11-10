@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link href="resources/css/default.css" rel="stylesheet" type="text/css"/>
+        <link href="resources/css/cssLayout.css" rel="stylesheet" type="text/css"/>
+        <title>Biblioteca</title>
+    </h:head>
+
+    <h:body>
+        
+        <p:breadCrumb>
+            <p:menuitem value="" url="admin.jsp" />
+            <p:menuitem value="Compras" url="compras.xhtml" />
+            <p:menuitem value="Ofertas" url="ofertas.jsp" />
+            <p:menuitem value="Club" url="club.jsp" />
+            <p:menuitem value="Reportes" url="reportes.xhtml" />
+        </p:breadCrumb>
+     
+        
+        <!-- TOP -->
+        <div>
+            <ui:insert name="top">
+                
+            </ui:insert>
+        </div>
+
+        
+        
+        <!-- Contenido -->
+        <div>
+            <!-- LEFT -->
+            <div>
+                <ui:insert name="left">
+                    
+                </ui:insert>
+            </div>
+            
+            <div>
+                <!-- RIGHT -->
+                <div>
+                    
+                </div>
+                
+                
+                
+            <div id="content" class="right_content" style = "text-align: center">
+                    
+            <br></br>
+            <br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br>     
+            
+                    <h2> Reporte de Cliente &nbsp;&nbsp;&nbsp;
+                       <p:button value="Generar Reporte" href="reportesJ/reporteCliente.jsp"/> 
+                    </h2>
+                    
+                    <h2> Reporte de Envios &nbsp;&nbsp;&nbsp; 
+                        <p:button value="Generar Reporte" href="reportesJ/reporteEnvio.jsp"/> 
+                    </h2>
+            
+                    <h2> Reporte de Autor &nbsp;&nbsp;&nbsp; 
+                        <p:button value="Generar Reporte" href="reportesJ/reporteAutor.jsp" /> 
+                    </h2>
+            
+                    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reporte de Empleado &nbsp;&nbsp;&nbsp; 
+                        <p:button value="Generar Reporte" href="reportesJ/reporteEmpleado.jsp"/> 
+                    </h2>
+                    
+                    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reporte por Codigo de Cliente &nbsp;&nbsp;&nbsp; 
+                        <p:button value="Generar Reporte" href="formulario.jsp"/> 
+                    </h2>
+                    
+            
+            <br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br>
+            <br></br><br></br>
+            
+
+
+
+
+                   
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- Footer -->
+        <footer>
+            <div style = "text-align: center; background-color:rgba(95, 95, 95,1); color: white" >
+            <br></br>
+            <br></br>
+            <img src="assets/img/Imagen1.png" width="200px" height="50px" />
+            <br></br>
+            <br></br>
+            © Biblioteca Online 2019
+            <br></br>
+            <br></br>
+            <br></br>
+            </div>
+        </footer>
+        
+       
+
+        <!-- Menu Parte Inferior -->
+        <p:stack icon="/assets/img/stack.png" expanded="true">
+            <p:menuitem value="Reportes" icon="/assets/img/iconReporte.png" url="reportes.xhtml"/>
+            <p:menuitem value="Club" icon="/assets/img/iconClub.png" url="club.jsp"/>
+            <p:menuitem value="Ofertas" icon="/assets/img/iconOfertas.png" url="ofertas.jsp"/>
+            <p:menuitem value="Compras" icon="/assets/img/iconCompras.png" url="compras.xhtml"/>
+        </p:stack>
+    </h:body>
+
+</html>
